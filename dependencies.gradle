@@ -1,0 +1,35 @@
+ext {
+    /** Android */
+    androidBuildToolsVersion = "28.0.1"
+    androidMinSdkVersion = 17
+    androidTargetSdkVersion= 27
+    androidCompileSdkVersion = 27
+    kotlinVersion = '1.2.50'
+
+    /** Libraries */
+    supportLibraryVersion = '28.0.1'
+    rxJavaVersion = '2.0.2'
+    javaxAnnotationVersion = '1.0'
+    javaxInjectVersion = '1'
+    parcelerApiVersion = '1.1.11'
+    parcelerVersion = '1.1.11'
+
+    /** Testing */
+    jUnitVersion = '4.12'
+    assertJVersion = '3.8.0'
+    mockitoKotlinVersion = '1.6.0'
+
+    domainDependencies = [
+            javaxAnnotation: "javax.annotation:jsr250-api:${javaxAnnotationVersion}",
+            javaxInject:     "javax.inject:javax.inject:${javaxInjectVersion}",
+            rxJava:          "io.reactivex.rxjava2:rxkotlin:${rxJavaVersion}",
+            parcelerApi:     "org.parceler:parceler-api:${parcelerApiVersion}",
+            parceler:        "org.parceler:parceler:${parcelerVersion}"
+    ]
+
+    domainTestDependencies = [
+            junit: "junit:junit:${jUnitVersion}",
+            mockito: "com.nhaarman:mockito-kotlin:${mockitoKotlinVersion}",
+            assertj: "org.assertj:assertj-core:${assertJVersion}"
+    ]
+}
