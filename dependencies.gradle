@@ -13,6 +13,7 @@ ext {
     javaxInjectVersion = '1'
     parcelerApiVersion = '1.1.11'
     parcelerVersion = '1.1.11'
+    kotlinReflectVerison = '1.2.0'
 
     /** Testing */
     jUnitVersion = '4.12'
@@ -24,7 +25,8 @@ ext {
             javaxInject:     "javax.inject:javax.inject:${javaxInjectVersion}",
             rxJava:          "io.reactivex.rxjava2:rxkotlin:${rxJavaVersion}",
             parcelerApi:     "org.parceler:parceler-api:${parcelerApiVersion}",
-            parceler:        "org.parceler:parceler:${parcelerVersion}"
+            parceler:        "org.parceler:parceler:${parcelerVersion}",
+            kotlinReflect:   "org.jetbrains.kotlin:kotlin-reflect:${kotlinReflectVerison}"
     ]
 
     domainTestDependencies = [

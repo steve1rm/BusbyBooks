@@ -9,6 +9,7 @@ dependencies {
     implementation domainDependencies.javaxInject
     implementation domainDependencies.rxJava
     implementation domainDependencies.parcelerApi
+    implementation domainDependencies.kotlinReflect
 
     kapt domainDependencies.parceler
 
