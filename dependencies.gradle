@@ -11,8 +11,8 @@ ext {
     rxJavaVersion = '2.0.2'
     javaxAnnotationVersion = '1.0'
     javaxInjectVersion = '1'
-    parcelerApiVersion = '1.1.11'
-    parcelerVersion = '1.1.11'
+    parcelerApiVersion = '1.1.9'
+    parcelerVersion = '1.1.9'
     kotlinReflectVerison = '1.2.0'
 
     /** Testing */
