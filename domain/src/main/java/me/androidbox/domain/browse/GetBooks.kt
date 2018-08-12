@@ -10,9 +10,9 @@ import javax.inject.Inject
 class GetBooks @Inject constructor(
         private val booksRepository: BooksRepository,
         postExecutionThread: PostExecutionThread)
-    : ObservableUseCase<List<BookDetails>, Nothing>(postExecutionThread) {
+    : ObservableUseCase<MutableList<BookDetails>, Nothing>(postExecutionThread) {
 
-    override fun buildUseCaseObservable(params: Nothing?): Observable<List<BookDetails>> {
+    override fun buildUseCaseObservable(params: Nothing?): Observable<MutableList<BookDetails>> {
         return booksRepository.getBooksDetails()
     }
 }
