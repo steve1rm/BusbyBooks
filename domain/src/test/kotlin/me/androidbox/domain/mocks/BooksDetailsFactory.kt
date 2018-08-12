@@ -2,7 +2,6 @@ package me.androidbox.domain.mocks
 
 import me.androidbox.domain.models.BookDetails
 import java.util.*
-import kotlin.properties.Delegates
 
 object BooksDetailsFactory {
     private fun randomUuid() = UUID.randomUUID().toString()
