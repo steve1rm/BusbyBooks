@@ -1,8 +1,10 @@
-package me.androidbox.data.respository
+package me.androidbox.data.bookstore
 
 import io.reactivex.Completable
 import io.reactivex.Observable
 import me.androidbox.data.entites.BookDetailsEntity
+import me.androidbox.data.respository.BookDetailsDataStore
+import me.androidbox.data.respository.BookDetailsRemote
 import java.lang.UnsupportedOperationException
 import javax.inject.Inject
 
